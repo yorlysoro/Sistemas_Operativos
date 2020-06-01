@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+void rutina(void);
+int main(int argc, char *argv[])
+{
+	printf("Hello from program\n");
+	rutina();
+	printf("Bye from programa\n");
+}
+
+void rutina(void)
+{
+	int i;
+	printf("Entering rutina\n");
+
+	for(i= 0;i < 10;i++)
+	{
+		printf("%d ", i);
+	
+	fflush(stdout);
+	sleep(1);
+	}
+}
